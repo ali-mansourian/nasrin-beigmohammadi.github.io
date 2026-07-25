@@ -82,6 +82,43 @@ section h3 {
     display: inline-block;
 }
 
+/* Info Section Specifics */
+#info h4 {
+    color: var(--gold-light);
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+#info p {
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+#info ul {
+    list-style-type: none;
+    padding-right: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#info ul li {
+    position: relative;
+    margin-bottom: 0.8rem;
+    padding-right: 1.5rem;
+    text-align: justify;
+}
+
+#info ul li::before {
+    content: "■";
+    color: var(--gold-primary);
+    position: absolute;
+    right: 0;
+    top: 0.1rem;
+    font-size: 0.7rem;
+}
+
+/* Services Grid */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -105,6 +142,11 @@ section h3 {
     color: var(--gold-light);
     font-weight: 700;
     margin-bottom: 0.8rem;
+}
+
+.service-card p {
+    text-align: justify;
+    font-size: 0.95rem;
 }
 
 .contact-info p {
